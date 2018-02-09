@@ -149,7 +149,7 @@ class ResourceNode extends React.Component {
                                     bBox={this.props.model.viewState.components.defaultWorkerLine}
                                     classes={classes}
                                     icon={ImageUtil.getCodePoint('worker')}
-                                    iconColor='#2980b9'
+                                    iconColor='#1c78b4'
                                 />
                                 {blockNode}
                             </g>
