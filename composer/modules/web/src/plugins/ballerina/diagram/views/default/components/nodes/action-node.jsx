@@ -134,7 +134,7 @@ class ActionNode extends React.Component {
                                     bBox={this.props.model.viewState.components.defaultWorkerLine}
                                     classes={classes}
                                     icon={ImageUtil.getCodePoint('worker')}
-                                    iconColor='#025482'
+                                    iconColor='#1c78b4'
                                 />
                                 {blockNode}
                             </g>
