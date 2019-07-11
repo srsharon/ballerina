@@ -17,6 +17,7 @@ export interface TopMenuProps {
     openedState: boolean;
     handleOpened: () => void;
     handleClosed: () => void;
+    handleReset: () => void;
     zoomFactor: number;
 }
 
@@ -30,6 +31,7 @@ export const TopMenu = (props: TopMenuProps) => {
         handleZoomOut,
         handleOpened,
         handleClosed,
+        handleReset,
         openedState,
         fitActive,
         zoomFactor = 1,
@@ -65,7 +67,7 @@ export const TopMenu = (props: TopMenuProps) => {
                         <Icon onClick={handleFitClick} active={fitActive} className="fw fw-fit" />
                     </Grid.Column>
                     <Grid.Column className="menu-control" width={3}>
-                        <Icon className="fw fw-refresh" />
+                        <Icon onClick={handleReset} className="fw fw-refresh" />
                         <Icon onClick={handleClosed} className="fw fw-uncheck" />
                     </Grid.Column>
                 </Grid.Row>
