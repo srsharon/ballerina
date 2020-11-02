@@ -221,7 +221,8 @@ public class BallerinaConnectorServiceImpl implements BallerinaConnectorService 
             }
         }
         BallerinaConnectorResponse response = new BallerinaConnectorResponse(request.getOrg(), request.getModule(),
-                request.getVersion(), request.getName(), request.getDisplayName(), ast, error, request.getBeta(), request.getCategory());
+                request.getVersion(), request.getName(), request.getDisplayName(), ast, error, request.getBeta(), 
+                request.getCategory());
         return CompletableFuture.supplyAsync(() -> response);
     }
 
